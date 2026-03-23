@@ -1,0 +1,16 @@
+{
+  "name": "sap-consultant-workspace",
+  "version": "2.0.0",
+  "description": "AI-powered SAP Architecture Workspace with multi-client management and DOCX export",
+  "main": "install.js",
+  "scripts": {
+    "install-workspace": "node install.js",
+    "test": "echo \"Run: node install.js to setup\""
+  },
+  "dependencies": {
+    "docx": "^8.5.0"
+  },
+  "keywords": ["sap", "consulting", "architecture", "ai", "workspace"],
+  "author": "maanu94",
+  "license": "MIT"
+}
