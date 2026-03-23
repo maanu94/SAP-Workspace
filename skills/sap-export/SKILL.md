@@ -14,7 +14,7 @@ Supports languages: ES (Spanish) and EN (English).
 ## How to Export
 
 1. **Analyze** the current conversation and identify the document to generate.
-2. **Create** a JSON file in the current working directory named `export-data.json` with this structure:
+2. **Create** a JSON file in the client's dedicated folder as `Clientes/[ClientName]/Documents/export-data.json` with this structure:
 
 ```json
 {
@@ -43,11 +43,11 @@ Supports languages: ES (Spanish) and EN (English).
 
 > The `language` field accepts `"es"` (Spanish) or `"en"` (English). Section headers will adapt accordingly.
 
-3. **Run** the export script:
+3. **Run** the export script, passing the path to the JSON file:
 ```
-node "$HOME/.gemini/antigravity/skills/sap-export/scripts/export.js" "export-data.json"
+node "$HOME/.gemini/antigravity/skills/sap-export/scripts/export.js" "Clientes/[ClientName]/Documents/export-data.json"
 ```
 
-4. The DOCX file will be created in the current directory as `ADR_[title].docx`.
+4. The DOCX file will be created in the same `Documents/` directory as `ADR_[title].docx`. This ensures the client's context is kept localized.
 
 </process>

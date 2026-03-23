@@ -5,12 +5,15 @@ A distributable, cross-platform **SAP Architecture Workspace** for AI-assisted c
 ## Features
 
 - 🧠 **Senior SAP Consultant Persona** — 15+ years expertise (S/4HANA, Ariba, BTP, CIG, ABAP)
-- 📂 **Multi-Client Management** — Isolated context per client with persistent session logs
-- 📚 **Global Knowledge Base** — Cross-client learnings organized by SAP module
+- 📂 **Multi-Client Management** — Isolated context per client with `Documents/` folder and logs
+- 📚 **Global Knowledge Base** — Cross-client learnings with duplication check and user approval
 - 📝 **SAP Document Templates** — ADR, Functional Spec, Technical Spec, Mapping Doc, Test Script
-- 📤 **DOCX Export** — Generate professional Word documents in Spanish or English
+- 📤 **DOCX Export** — Client-localized Word document generation (ES/EN)
+- 🌍 **Session Language** — Choose your working language (ES/EN) at the start
 - 🔍 **SAP Reference Cheat Sheet** — TCodes, BAPIs, cXML, APIs at your fingertips
 - 🚫 **Anti-Hallucination Rules** — Never gives vague answers; offers to search official SAP docs
+- 🚀 **Installer Improvements** — Enhanced OS and AI tool detection for smoother setup.
+- 💡 **Contextual Help** — AI provides more relevant suggestions based on current client and document type.
 
 ## Quick Start
 
@@ -65,6 +68,17 @@ All documents support **Spanish (ES)** and **English (EN)**. The AI automaticall
 
 - **Node.js** 14+ (for installer and DOCX export)
 - **Antigravity** or **Claude Code**
+
+## Changelog
+
+### v2.1.0 (2026-03-23)
+- **Client-Specific Context**: Added `Documents/` folder for each client; `/sap-export` now saves there.
+- **Improved Language Handling**: Session-based language selection (ES/EN) at the start.
+- **Interactive Knowledge**: AI now asks for approval before updating `GLOBAL-KNOWLEDGE.md` and checks for duplicates.
+- **Clean Structure**: Standardized directory structure for better AI context retention.
+
+### v2.0.0 (Initial Release)
+- Multi-client setup, persona prompts, templates, and DOCX export.
 
 ## License
 

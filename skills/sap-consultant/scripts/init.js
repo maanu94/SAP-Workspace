@@ -140,6 +140,12 @@ function createClient(clientName) {
         '{{DATE}}': today
     });
 
+    // Create Documents folder
+    const docsDir = path.join(clientDir, 'Documents');
+    if (!fs.existsSync(docsDir)) {
+        fs.mkdirSync(docsDir, { recursive: true });
+    }
+
     // Create SESSION-LOG.md
     copyTemplate('session-log.md', path.join(clientDir, 'SESSION-LOG.md'), {
         '{{CLIENT_NAME}}': clientName

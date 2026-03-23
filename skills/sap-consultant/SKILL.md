@@ -14,7 +14,16 @@ Optional argument: $ARGUMENTS can contain a client name to jump directly to that
 
 <process>
 
-## Step 1: Check Workspace Initialization
+## Step 1: Language Selection (FIRST STEP)
+
+Ask the user: "Select your working language / Seleccioná el idioma de trabajo:"
+Options:
+- 🇪🇸 Spanish (ES)
+- 🇺🇸 English (EN)
+
+**Once selected, the AI must stick to that language exclusively for the entire session.** No more bilingual "/" prompts. ALL subsequent steps and persona interactions must be in the chosen language.
+
+## Step 2: Check Workspace Initialization
 
 Check if the current working directory has a `.cursorrules` file and a `GLOBAL-KNOWLEDGE.md`.
 
@@ -28,9 +37,9 @@ node "$HOME/.gemini/antigravity/skills/sap-consultant/scripts/init.js" --workspa
 
 This creates: `.cursorrules`, `CLAUDE.md`, `GLOBAL-KNOWLEDGE.md`, `REFERENCE.md`, `Clientes/`, and `templates/`.
 
-**If already initialized:** Continue to Step 2.
+**If already initialized:** Continue to Step 3.
 
-## Step 2: Client Selection
+## Step 3: Client Selection
 
 Scan the `Clientes/` directory for existing client subdirectories.
 
@@ -40,20 +49,19 @@ Scan the `Clientes/` directory for existing client subdirectories.
 
 **If no argument provided:**
 
-List existing clients and ask the user:
-
-"Select a client for this session / Seleccioná un cliente para esta sesión:"
+List existing clients and ask the user (in the chosen language):
+- "Select a client for this session" (EN) OR "Seleccioná un cliente para esta sesión" (ES)
 
 Options:
 - One option per existing client directory found
-- Last option: "➕ Create New Client / Crear Nuevo Cliente"
+- Last option: "➕ Create New Client" (EN) OR "➕ Crear Nuevo Cliente" (ES)
 
 Wait for user response.
 
-**If existing client selected:** Go to Step 3.
-**If "Create New Client" selected:** Go to Step 4.
+**If existing client selected:** Go to Step 4.
+**If "Create New Client" selected:** Go to Step 5.
 
-## Step 3: Restore Context (Existing Client)
+## Step 4: Restore Context (Existing Client)
 
 Read these files in order:
 1. `GLOBAL-KNOWLEDGE.md` (root)
@@ -61,16 +69,16 @@ Read these files in order:
 3. `Clientes/[SelectedClient]/SESSION-LOG.md`
 4. `REFERENCE.md` (root)
 
-Present a summary to the user:
+Present a summary to the user (in the chosen language):
 - Client landscape (from SAP-CONTEXT.md)
 - Last session summary (from SESSION-LOG.md — last 3 entries)
 - Any pending items from the last session
 
-Then ask: "What are we working on today? / ¿En qué trabajamos hoy?"
+Then ask: "¿En qué trabajamos hoy?" (ES) OR "What are we working on today?" (EN)
 
 **Done.** The AI is now in SAP Consultant mode with full context.
 
-## Step 4: New Client Setup
+## Step 5: New Client Setup
 
 Ask the user for the client name, then ask these landscape questions to auto-populate SAP-CONTEXT.md:
 
@@ -102,7 +110,7 @@ node "$HOME/.gemini/antigravity/skills/sap-consultant/scripts/init.js" --new-cli
 
 Then manually populate the answers into `Clientes/[ClientName]/SAP-CONTEXT.md` by editing the placeholder values with the real answers.
 
-Go to Step 3 to load the context.
+Go to Step 4 to load the context.
 
 </process>
 
