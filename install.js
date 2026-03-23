@@ -17,7 +17,7 @@ const IS_WINDOWS = process.platform === 'win32';
 
 console.log('');
 console.log('╔══════════════════════════════════════════════════╗');
-console.log('║   SAP Consultant Workspace — Installer v2.0     ║');
+console.log('║   SAP Consultant Workspace — Installer v2.2     ║');
 console.log('╠══════════════════════════════════════════════════╣');
 console.log(`║   OS: ${IS_WINDOWS ? 'Windows' : 'MacOS/Linux'}`.padEnd(51) + '║');
 console.log('╚══════════════════════════════════════════════════╝');

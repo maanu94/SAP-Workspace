@@ -15,7 +15,21 @@ A distributable, cross-platform **SAP Architecture Workspace** for AI-assisted c
 - 🚀 **Installer Improvements** — Enhanced OS and AI tool detection for smoother setup.
 - 💡 **Contextual Help** — AI provides more relevant suggestions based on current client and document type.
 
-## Quick Start
+## Quick Start (Automated)
+
+Copy and paste the command for your OS into your terminal:
+
+**Windows (PowerShell):**
+```powershell
+Set-ExecutionPolicy Bypass -Scope Process -Force; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/maanu94/SAP-Workspace/main/setup-win.ps1'))
+```
+
+**MacOS / Linux (Shell):**
+```bash
+curl -fsSL https://raw.githubusercontent.com/maanu94/SAP-Workspace/main/setup-mac.sh | bash
+```
+
+### Manual Installation
 
 ```bash
 git clone https://github.com/maanu94/SAP-Workspace.git
@@ -70,6 +84,10 @@ All documents support **Spanish (ES)** and **English (EN)**. The AI automaticall
 - **Antigravity** or **Claude Code**
 
 ## Changelog
+
+### v2.2.0 (2026-03-23)
+- **Automated Bootstrap**: Added `setup-win.ps1` and `setup-mac.sh` for one-liner installation including Git/Node.js checks.
+- **Enhanced Installer**: Version 2.2 UI.
 
 ### v2.1.0 (2026-03-23)
 - **Client-Specific Context**: Added `Documents/` folder for each client; `/sap-export` now saves there.
