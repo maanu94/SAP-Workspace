@@ -15,8 +15,8 @@ A distributable, cross-platform **SAP Architecture Workspace** for AI-assisted c
 ## Quick Start
 
 ```bash
-git clone https://github.com/maanu94/maanu94.git
-cd maanu94
+git clone https://github.com/maanu94/SAP-Workspace.git
+cd SAP-Workspace
 node install.js
 ```
 
