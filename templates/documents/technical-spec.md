@@ -35,6 +35,15 @@ _Descripción breve de la solución técnica._
 
 ---
 
+## 3. Clean ABAP & Standard Compliance / Clean ABAP y Cumplimiento de Estándar
+
+- [ ] **Naming**: Classes `ZCL_`, Methods `camelCase`, Variables `lv_`, `ls_`, `lt_`.
+- [ ] **Complexity**: Method size < 50 lines. No nested loops (use hashing/sorting).
+- [ ] **Modern ABAP**: Use inline declarations (`DATA(lv_var)`) and expressions.
+- [ ] **Unit Tests**: ABAP Unit covering critical business logic.
+
+---
+
 ## 3. Database Design / Diseño de Base de Datos
 
 ### Custom Tables / Tablas Custom
@@ -44,6 +53,20 @@ _Descripción breve de la solución técnica._
 |---|---|---|---|---|---|
 | MANDT | MANDT | CLNT | 3 | X | Client |
 | [FIELD] | [DTEL] | [TYPE] | [LEN] | | [Description] |
+
+---
+
+## 5. CDS Modeling & VDM / Modelado CDS y VDM
+
+### 5.1 Layering / Capas
+- **Basic View**: Direct 1:1 mapped to table.
+- **Composite View**: Joins/Associations across basic views (reusable).
+- **Consumption View**: Final projection for UI/API with specific annotations.
+
+### 5.2 Key Annotations
+- `@EndUserText.label`: Human-readable description.
+- `@Analytics.query: true`: If used for analytical purposes.
+- `@Consumption.valueHelpDefinition`: For search helps.
 
 ---
 

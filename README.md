@@ -5,15 +5,16 @@ A distributable, cross-platform **SAP Architecture Workspace** for AI-assisted c
 ## Features
 
 - 🧠 **Senior SAP Consultant Persona** — 15+ years expertise (S/4HANA, Ariba, BTP, CIG, ABAP)
+- 💎 **Professional Skills (V3.0)** — Integrated `docx`, `pptx`, `xlsx`, and `pdf` official skills
+- 🎨 **Antigravity Design System** — Spatial depth, glassmorphism, and GSAP motion standards
+- 🛠️ **Technical Excellence** — Clean ABAP checklists and CDS VDM modeling templates
 - 📂 **Multi-Client Management** — Isolated context per client with `Documents/` folder and logs
 - 📚 **Global Knowledge Base** — Cross-client learnings with duplication check and user approval
-- 📝 **SAP Document Templates** — ADR, Functional Spec, Technical Spec, Mapping Doc, Test Script
-- 📤 **DOCX Export** — Client-localized Word document generation (ES/EN)
+- 📝 **Advanced Document Templates** — ADR, FS, TS, UI-SPEC, Mapping Doc, Test Script
+- 📤 **DOCX Export (Premium)** — Professional Word generation with optimized layouts
 - 🌍 **Session Language** — Choose your working language (ES/EN) at the start
-- 🔍 **SAP Reference Cheat Sheet** — TCodes, BAPIs, cXML, APIs at your fingertips
+- 🔍 **SAP Reference Matrix** — TCodes, BAPIs, Integration Patterns, and Fiori Annotations
 - 🚫 **Anti-Hallucination Rules** — Never gives vague answers; offers to search official SAP docs
-- 🚀 **Installer Improvements** — Enhanced OS and AI tool detection for smoother setup.
-- 💡 **Contextual Help** — AI provides more relevant suggestions based on current client and document type.
 
 ## Quick Start (Automated)
 
