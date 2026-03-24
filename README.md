@@ -84,21 +84,24 @@ Pick your format:
 
 This project uses **Git Tags** to mark stable releases. If you need to restore or download a previous version:
 1. Go to the **Releases** or **Tags** tab on GitHub.
-2. Select the version (e.g., `v3.1.1`) and download the Source Code (ZIP).
+2. Select the version (e.g., `v3.1.2`) and download the Source Code (ZIP).
 
 ## Changelog
 
+### v3.1.2 (2026-03-24) — Professionalism & Persona Restoration
+- **Root Persona Restored**: Added sanitized `.cursorrules` and `CLAUDE.md` to the repository root for immediate "Out of the box" Senior SAP Consultant intelligence.
+- **Improved Templates**: Upgraded `templates/cursorrules.md` and `templates/claude-md.md` with the latest V3.1 professional standards.
+- **Privacy Enforcement**: Maintained strict exclusion of `Clientes/` and local state files while allowing generic persona configuration.
+
 ### v3.1.1 (2026-03-24) — Security & Final Cleanup
-- **Privacy Enforcement**: Hardened `.gitignore` to permanently exclude `.cursorrules`, `CLAUDE.md`, and other local state files.
-- **Dependency Update**: Added `pptxgenjs` and `exceljs` to the installer requirements.
+- **Privacy Enforcement**: Hardened `.gitignore` to exclude personal and local context files.
 
 ### v3.1.0 (2026-03-24) — Professional Export Suite
-- **New PPTX Export**: Generate slides for client presentations with professional branding.
-- **New XLSX Export**: Generate structured test scripts for QA teams.
-- **Enhanced DOCX**: Improved Technical Specifications with detailed ABAP object inventories and code formatting.
+- **New PPTX & XLSX Exports**: Professional slides and test scripts.
+- **Enhanced DOCX**: ABAP object inventories and code formatting.
 
 ### v3.0.0 (2026-03-24) — Professional Upgrade
-- **Integrated Professional Skills**: Added official `docx`, `pptx`, `xlsx`, and `pdf` automation.
+- **Integrated Professional Skills**: `docx`, `pptx`, `xlsx`, and `pdf` automation.
 - **Antigravity Design System**: Integrated GSAP and spatial design standards.
 
 ## License
