@@ -169,6 +169,42 @@ function createADRDocument(data) {
     children.push(new Paragraph({ text: L.recommendation, heading: HeadingLevel.HEADING_1 }));
     children.push(new Paragraph({ text: data.recommendation || L.pending, spacing: { after: 300 } }));
 
+    // Technical Design (New for V3.1)
+    if (data.technicalDesign && data.technicalDesign.objects) {
+        children.push(new Paragraph({ text: lang === 'es' ? '4. Diseño Técnico' : '4. Technical Design', heading: HeadingLevel.HEADING_1 }));
+        
+        data.technicalDesign.objects.forEach(obj => {
+            children.push(new Paragraph({
+                children: [
+                    new TextRun({ text: `${obj.type}: `, bold: true }),
+                    new TextRun({ text: obj.name, color: '005483', bold: true })
+                ],
+                heading: HeadingLevel.HEADING_2
+            }));
+            
+            if (obj.package) {
+                children.push(new Paragraph({
+                    children: [new TextRun({ text: `Package: ${obj.package}`, italic: true })]
+                }));
+            }
+            
+            children.push(new Paragraph({ text: obj.description || '', spacing: { after: 120 } }));
+            
+            if (obj.code) {
+                children.push(new Paragraph({
+                    children: [new TextRun({ 
+                        text: obj.code, 
+                        font: 'Courier New', 
+                        size: 16,
+                        color: '333333'
+                    })],
+                    shading: { fill: 'F4F4F4' },
+                    spacing: { before: 200, after: 200 }
+                }));
+            }
+        });
+    }
+
     // Consequences
     children.push(new Paragraph({ text: L.consequences, heading: HeadingLevel.HEADING_1 }));
     (data.consequences || []).forEach(c => {

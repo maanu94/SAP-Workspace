@@ -1,0 +1,63 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "SAP Technical Design Schema",
+  "type": "object",
+  "properties": {
+    "title": { "type": "string" },
+    "client": { "type": "string" },
+    "date": { "type": "string" },
+    "language": { "type": "string", "enum": ["es", "en"] },
+    "context": { "type": "string" },
+    "options": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "pros": { "type": "array", "items": { "type": "string" } },
+          "cons": { "type": "array", "items": { "type": "string" } },
+          "businessImpact": { "type": "string" }
+        }
+      }
+    },
+    "technicalDesign": {
+      "type": "object",
+      "properties": {
+        "objects": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "properties": {
+              "type": { "type": "string" },
+              "name": { "type": "string" },
+              "package": { "type": "string" },
+              "description": { "type": "string" },
+              "code": { "type": "string" }
+            }
+          }
+        }
+      }
+    },
+    "testScripts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": { "type": "string" },
+          "scenario": { "type": "string" },
+          "steps": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "step": { "type": "string" },
+                "input": { "type": "string" },
+                "expected": { "type": "string" }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
