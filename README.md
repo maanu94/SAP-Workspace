@@ -6,6 +6,7 @@ A distributable, cross-platform **SAP Architecture Workspace** for AI-assisted c
 
 - 🧠 **Senior SAP Consultant Persona** — 15+ years expertise (S/4HANA, Ariba, BTP, CIG, ABAP)
 - 💎 **Professional Skills (V3.0)** — Integrated `docx`, `pptx`, `xlsx`, and `pdf` official skills
+- 🎥 **Professional Exports (V3.1)** — Generate high-end Slide Decks (PPTX) and Test Scripts (XLSX)
 - 🎨 **Antigravity Design System** — Spatial depth, glassmorphism, and GSAP motion standards
 - 🛠️ **Technical Excellence** — Clean ABAP checklists and CDS VDM modeling templates
 - 📂 **Multi-Client Management** — Isolated context per client with `Documents/` folder and logs
@@ -42,7 +43,7 @@ The installer will:
 1. Detect your OS (Windows / MacOS)
 2. Detect your AI tool (Antigravity / Claude Code)
 3. Copy skills to the correct location
-4. Install the `docx` dependency for DOCX export
+4. Install the `docx`, `pptxgenjs`, and `exceljs` dependencies
 
 ## Usage
 
@@ -59,11 +60,14 @@ This creates the workspace files: `.cursorrules`, `GLOBAL-KNOWLEDGE.md`, `REFERE
 ```
 Creates a new client folder with `SAP-CONTEXT.md` and `SESSION-LOG.md`, then asks SAP landscape questions.
 
-### Export a document to DOCX
+### Export a document
 ```
 /sap-export
 ```
-Generates a Word document from the current conversation context.
+Pick your format:
+- `docx` -> ADR or Technical Spec (TS).
+- `pptx` -> Client Presentation (Slide Deck).
+- `xlsx` -> Scenario-based Test Scripts.
 
 ## Supported Document Types
 
@@ -76,42 +80,26 @@ Generates a Word document from the current conversation context.
 | TEST | Integration Test Script |
 | UI   | UI Specification (Fiori Elements / Custom UI5) |
 
-## Languages
-
-All documents support **Spanish (ES)** and **English (EN)**. The AI automatically matches your language.
-
-## Requirements
-
-- **Node.js** 14+ (for installer and DOCX export)
-- **Antigravity** or **Claude Code**
-
-## Changelog
-
-### v3.0.1 (2026-03-24) — Security & Cleanup Fix
-- **Privacy Enforcement**: Updated `.gitignore` to strictly exclude the `Clientes/` folder and sensitive local context.
-- **Repository Cleanup**: Removed local state files from Git tracking to ensure a clean, generic start for new users.
-- **Improved Ignored List**: Added `*.docx` and `.gemini/` to prevent accidental leaks of exported documents or internal AI logs.
-
-### v3.0.0 (2026-03-24) — Professional Upgrade
-- **Integrated Professional Skills**: Added official `docx`, `pptx`, `xlsx`, and `pdf` automation skills.
-- **Antigravity Design System**: Integrated GSAP and spatial design standards for modern UI/UX.
-- **Enhanced Templates**: Upgraded FS/TS with Clean ABAP, CDS Modeling, and Mermaid diagrams.
-- **New UI-SPEC Template**: Standardized frontend specification for Fiori/Web projects.
-- **Global Design Tokens**: Added `DESIGN-SYSTEM.md` for consistent workspace-wide styling.
-
-### v2.2.0 (2026-03-23)
-- **Automated Bootstrap**: Added `setup-win.ps1` and `setup-mac.sh` for one-liner installation including Git/Node.js checks.
-- **Enhanced Installer**: Version 2.2 UI.
-
-### v2.0.0 (Initial Release)
-- Multi-client setup, persona prompts, templates, and DOCX export.
-
 ## Versioning & Restoration
 
 This project uses **Git Tags** to mark stable releases. If you need to restore or download a previous version:
 1. Go to the **Releases** or **Tags** tab on GitHub.
-2. Select the version (e.g., `v3.0.1`) and download the Source Code (ZIP).
-3. Or using Git: `git checkout tags/v2.2.0`
+2. Select the version (e.g., `v3.1.1`) and download the Source Code (ZIP).
+
+## Changelog
+
+### v3.1.1 (2026-03-24) — Security & Final Cleanup
+- **Privacy Enforcement**: Hardened `.gitignore` to permanently exclude `.cursorrules`, `CLAUDE.md`, and other local state files.
+- **Dependency Update**: Added `pptxgenjs` and `exceljs` to the installer requirements.
+
+### v3.1.0 (2026-03-24) — Professional Export Suite
+- **New PPTX Export**: Generate slides for client presentations with professional branding.
+- **New XLSX Export**: Generate structured test scripts for QA teams.
+- **Enhanced DOCX**: Improved Technical Specifications with detailed ABAP object inventories and code formatting.
+
+### v3.0.0 (2026-03-24) — Professional Upgrade
+- **Integrated Professional Skills**: Added official `docx`, `pptx`, `xlsx`, and `pdf` automation.
+- **Antigravity Design System**: Integrated GSAP and spatial design standards.
 
 ## License
 
