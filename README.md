@@ -74,6 +74,7 @@ Generates a Word document from the current conversation context.
 | TS   | Technical Specification (ABAP-focused) |
 | MAP  | Integration Mapping Document (IDoc/cXML) |
 | TEST | Integration Test Script |
+| UI   | UI Specification (Fiori Elements / Custom UI5) |
 
 ## Languages
 
@@ -85,6 +86,13 @@ All documents support **Spanish (ES)** and **English (EN)**. The AI automaticall
 - **Antigravity** or **Claude Code**
 
 ## Changelog
+
+### v3.0.0 (2026-03-24) — Professional Upgrade
+- **Integrated Professional Skills**: Added official `docx`, `pptx`, `xlsx`, and `pdf` automation skills.
+- **Antigravity Design System**: Integrated GSAP and spatial design standards for modern UI/UX.
+- **Enhanced Templates**: Upgraded FS/TS with Clean ABAP, CDS Modeling, and Mermaid diagrams.
+- **New UI-SPEC Template**: Standardized frontend specification for Fiori/Web projects.
+- **Global Design Tokens**: Added `DESIGN-SYSTEM.md` for consistent workspace-wide styling.
 
 ### v2.2.0 (2026-03-23)
 - **Automated Bootstrap**: Added `setup-win.ps1` and `setup-mac.sh` for one-liner installation including Git/Node.js checks.
@@ -98,6 +106,13 @@ All documents support **Spanish (ES)** and **English (EN)**. The AI automaticall
 
 ### v2.0.0 (Initial Release)
 - Multi-client setup, persona prompts, templates, and DOCX export.
+
+## Versioning & Restoration
+
+This project uses **Git Tags** to mark stable releases. If you need to restore or download a previous version:
+1. Go to the **Releases** or **Tags** tab on GitHub.
+2. Select the version (e.g., `v3.0.0`) and download the Source Code (ZIP).
+3. Or using Git: `git checkout tags/v2.2.0`
 
 ## License
 
