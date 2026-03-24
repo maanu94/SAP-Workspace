@@ -87,6 +87,11 @@ All documents support **Spanish (ES)** and **English (EN)**. The AI automaticall
 
 ## Changelog
 
+### v3.0.1 (2026-03-24) — Security & Cleanup Fix
+- **Privacy Enforcement**: Updated `.gitignore` to strictly exclude the `Clientes/` folder and sensitive local context.
+- **Repository Cleanup**: Removed local state files from Git tracking to ensure a clean, generic start for new users.
+- **Improved Ignored List**: Added `*.docx` and `.gemini/` to prevent accidental leaks of exported documents or internal AI logs.
+
 ### v3.0.0 (2026-03-24) — Professional Upgrade
 - **Integrated Professional Skills**: Added official `docx`, `pptx`, `xlsx`, and `pdf` automation skills.
 - **Antigravity Design System**: Integrated GSAP and spatial design standards for modern UI/UX.
@@ -98,12 +103,6 @@ All documents support **Spanish (ES)** and **English (EN)**. The AI automaticall
 - **Automated Bootstrap**: Added `setup-win.ps1` and `setup-mac.sh` for one-liner installation including Git/Node.js checks.
 - **Enhanced Installer**: Version 2.2 UI.
 
-### v2.1.0 (2026-03-23)
-- **Client-Specific Context**: Added `Documents/` folder for each client; `/sap-export` now saves there.
-- **Improved Language Handling**: Session-based language selection (ES/EN) at the start.
-- **Interactive Knowledge**: AI now asks for approval before updating `GLOBAL-KNOWLEDGE.md` and checks for duplicates.
-- **Clean Structure**: Standardized directory structure for better AI context retention.
-
 ### v2.0.0 (Initial Release)
 - Multi-client setup, persona prompts, templates, and DOCX export.
 
@@ -111,7 +110,7 @@ All documents support **Spanish (ES)** and **English (EN)**. The AI automaticall
 
 This project uses **Git Tags** to mark stable releases. If you need to restore or download a previous version:
 1. Go to the **Releases** or **Tags** tab on GitHub.
-2. Select the version (e.g., `v3.0.0`) and download the Source Code (ZIP).
+2. Select the version (e.g., `v3.0.1`) and download the Source Code (ZIP).
 3. Or using Git: `git checkout tags/v2.2.0`
 
 ## License
