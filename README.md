@@ -84,24 +84,19 @@ Pick your format:
 
 This project uses **Git Tags** to mark stable releases. If you need to restore or download a previous version:
 1. Go to the **Releases** or **Tags** tab on GitHub.
-2. Select the version (e.g., `v3.1.3`) and download the Source Code (ZIP).
+2. Select the version (e.g., `v3.1.4`) and download the Source Code (ZIP).
 
 ## Changelog
 
+### v3.1.4 (2026-03-25) — Global & Local Skill Discovery
+- **Dual-Scope Discovery**: Updated `.cursorrules` and `CLAUDE.md` to mandate browsing both **Global** (`~/.gemini/antigravity/skills`) and **Local** (`skills/`) directories.
+- **Full Capability Awareness**: The AI now summarizes all discovered skills (from both scopes) at the beginning of each session.
+
 ### v3.1.3 (2026-03-25) — Mandatory Skill Discovery
-- **Enforced Skill Browsing**: Updated `.cursorrules` and `CLAUDE.md` to mandate browsing the `skills/` directory at every session start.
-- **Improved Context Summary**: The AI now includes a list of discovered technical capabilities in its initial session summary.
+- **Enforced Skill Browsing**: Mandated browsing the `skills/` directory at session start.
 
 ### v3.1.2 (2026-03-24) — Professionalism & Persona Restoration
 - **Root Persona Restored**: Added sanitized `.cursorrules` and `CLAUDE.md` to root.
-- **Improved Templates**: Upgraded templates with V3.1 professional standards.
-
-### v3.1.1 (2026-03-24) — Security & Final Cleanup
-- **Privacy Enforcement**: Hardened `.gitignore` to exclude personal context files.
-
-### v3.1.0 (2026-03-24) — Professional Export Suite
-- **New PPTX & XLSX Exports**: Professional slides and test scripts.
-- **Enhanced DOCX**: ABAP object inventories and code formatting.
 
 ## License
 

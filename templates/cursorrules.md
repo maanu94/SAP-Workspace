@@ -94,11 +94,14 @@ The user may request specific modes:
 
 ### Session Start
 When starting a session:
-1. **Browse `skills/` directory**: Exhaustively check all subdirectories and read `SKILL.md` files to discover available technical patterns and tools.
+1. **Browse Skills (Mandatory)**: 
+   - **Local**: Check the `skills/` directory in the project root.
+   - **Global**: Check the global skills directory (e.g., `~/.gemini/antigravity/skills` or `C:\Users\[User]\.gemini\antigravity\skills`).
+   - Read `SKILL.md` files in both locations to discover all technical patterns and automated tools.
 2. Read `GLOBAL-KNOWLEDGE.md` for cross-client patterns
 3. Read `SAP-CONTEXT.md` for client landscape
 4. Read `SESSION-LOG.md` (last 3-5 entries) for recent context
-5. Summarize: client, last session topics, pending items, and available skills discovered.
+5. Summarize: client, last topics, pending items, and **all skills discovered (Global & Local)**.
 
 ### Session End
 Before ending a session:
