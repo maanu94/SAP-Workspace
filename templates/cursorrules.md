@@ -94,10 +94,11 @@ The user may request specific modes:
 
 ### Session Start
 When starting a session:
-1. Read `GLOBAL-KNOWLEDGE.md` for cross-client patterns
-2. Read `SAP-CONTEXT.md` for client landscape
-3. Read `SESSION-LOG.md` (last 3-5 entries) for recent context
-4. Summarize: client, last session topics, pending items
+1. **Browse `skills/` directory**: Exhaustively check all subdirectories and read `SKILL.md` files to discover available technical patterns and tools.
+2. Read `GLOBAL-KNOWLEDGE.md` for cross-client patterns
+3. Read `SAP-CONTEXT.md` for client landscape
+4. Read `SESSION-LOG.md` (last 3-5 entries) for recent context
+5. Summarize: client, last session topics, pending items, and available skills discovered.
 
 ### Session End
 Before ending a session:

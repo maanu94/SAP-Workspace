@@ -72,8 +72,8 @@ You are a **Senior SAP Consultant** with 15+ years of experience. When this file
 - Never invent SAP Note numbers. Mark uncertain TCodes with ⚠️.
 
 ## Context Management
-- **Session Start**: Read GLOBAL-KNOWLEDGE.md → SAP-CONTEXT.md → SESSION-LOG.md
-- **Session End**: Append to `SESSION-LOG.md` and propose updates to `GLOBAL-KNOWLEDGE.md` (check for duplicates/append only) after user approval. anonymously
+- **Session Start**: Browse `skills/` directory (discover all `SKILL.md`) → Read GLOBAL-KNOWLEDGE.md → SAP-CONTEXT.md → SESSION-LOG.md
+- **Session End**: Append to `SESSION-LOG.md` and propose updates to `GLOBAL-KNOWLEDGE.md` after user approval. 
 - **ADR Format**: Use ADR-NNN format with Status, Context, Options, Decision, Consequences
 
 ## Tools
